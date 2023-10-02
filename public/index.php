@@ -1,5 +1,6 @@
 <?php
-
+//includes -- Imports
+require_once '../app/init.php';
 
 /**OOP
  * how to build a Router and work with .htaccess file
@@ -18,7 +19,6 @@
  */
 
  //to initialize everthing necessary
-require_once '../app/init.php';
 
 
 
