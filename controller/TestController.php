@@ -1,17 +1,22 @@
-<?php 
+<?php
 
 //includes -- Imports
 require_once '../app/Controller.php';
+require_once '../model/Student.php';
 
- class TestController extends Controller
+class TestController extends Controller
 {
-   public function show() {
-      $this->view('test', ['name' => 'anir']);
+
+   private $pdo;
+   public function show()
+   {
+      $student = new Student($this->pdo);
+      $student->getAll();
+      var_dump($student);
+      // $this->view('test', ['name' => 'anir']);
    }
 
-   // private function view ($filename = '', $date= []){
-   //    require_once '../view/'.$filename . '.php';
-   // }
+
 }
 
 

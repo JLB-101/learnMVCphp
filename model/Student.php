@@ -6,7 +6,7 @@ class Student extends Model
 
 {
 
-    protected $table = '';
+    protected $table = 'students';
 
     private $id;
     private $name;
